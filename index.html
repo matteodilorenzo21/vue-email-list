@@ -36,8 +36,14 @@
     </head>
 
 <body>
-    <div id="root">
-        
+    <div id="root" class="p-1">
+
+        <ul id="display" class="list-unstyled">
+
+            <li v-for="email in emails" :key="email">> {{ email }}</li>
+
+        </ul>
+
     </div>
 </body>
 

@@ -1,5 +1,7 @@
 const endpoint = 'https://flynn.boolean.careers/exercises/api/random/mail';
 
+const display = document.querySelector('#display');
+
 const app = Vue.createApp({
     data() {
         return {
@@ -14,7 +16,7 @@ const app = Vue.createApp({
               this.emails.push(resultEmail);
             })
             .catch((error) => {
-              console.log(error);
+              alert('Errore nella pagina');
             });
         }
       },

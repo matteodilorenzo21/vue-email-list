@@ -38,7 +38,7 @@
 <body>
     <div id="root" class="p-1">
 
-        <ul id="display" class="list-unstyled">
+        <ul v-if="emails.length === 10" id="display" class="list-unstyled">
 
             <li v-for="email in emails" :key="email">> {{ email }}</li>
 
